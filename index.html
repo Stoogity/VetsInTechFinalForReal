@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into the Dark</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-wrapper">
+            <div class="top-left-half">
+                <div class="create">Create Your Character</div>
+                <div class="portrait">
+                    <div class="portrait1">
+                        <div class="portOneSlides">
+                            <img src="./portraits/OhrUmbermoor.png">
+                            <img src="./portraits/HudakHuba.png">
+                            <img src="./portraits/PyranikusTryphon.png">
+                        </div>
+                        <button class="portrait1-prev">Prev</button>
+                        <button class="portrait1-next">Next</button>   
+                    </div>
+                    <div class="portrait2">
+                        <div class="portTwoSlides">
+                            <img id="femaleHalfOrc" src="./portraits/VanchuRatley.png">
+                            <img id="femaleTiefling" src="./portraits/HacariShadowhorn.png">
+                            <img id="femaleGnome" src="./portraits/RuzaHuba.png">
+                        </div>
+                        <button class="portrait2-prev">Prev</button>
+                        <button class ="portrait2-next">Next</button>
+                    </div>   
+                </div>
+            </div>
+            <div class="top-right-half">
+                <div class="explain-classes-text">Character Classes:</div>
+                <div class="Rogue-header">Rogue:
+                    <button id="rogueButton">Select</button>
+                </div>
+                <div class="Rogue-text">A trickster that takes advantage of stealth and tactics to gain advantage over
+                    opponents. Let them think they have the upper hand, then prove them wrong with this class.
+                </div>
+                <div class="warrior-header">Warrior: 
+                    <button id="warButton">Select</button>
+                </div>
+                <div class="warrior-text">A heavy hitter that uses sturdy armor. Dive into the fray with reckless abandon with this class. 
+                </div>
+                <div class="mage-header">Mage:
+                    <button id="mageButton">Select</button>
+                </div>
+                <div class="mage-text">Manipulate the elements and even reality itself to bend your opponenents to your will with this class.
+
+                </div>
+            </div>
+        </div>
+        <div class="middle-wrapper">
+            <div id="charstory"></div>
+            <div class="statbox">
+                <div class="stat">
+                    <span class="statTitle">Strength: </span>
+                     <span class="statGroup">
+                        <span id="strengthStat">0</span>
+                        <button id="minusStrength">-</button>
+                        <button id="plusStrength">+</button>
+                    </span>
+                </div>
+                <div class="stat">
+                    <span class="statTitle">Dex: </span> 
+                    <span class="statGroup">   
+                        <span id="dexStat">0</span>
+                        <button id="minusDex">-</button>
+                        <button id="plusDex">+</button>
+                    </span>
+                </div>
+                <div class="stat">
+                    <span class="statTitle">Int: </span> 
+                    <span class="statGroup">
+                        <span id="intStat">0</span>
+                        <button id="minusInt">-</button>
+                        <button id="plusInt">+</button>
+                    </span>
+                </div>
+                <div class="stat">
+                    Available Points: <span id="availPoints">15</span>
+                </div>
+            </div>
+            <div class="explainStats">Allocate your stats. Strength improves raw physical damage. Dex improves chance to dodge and chance to critically hit. 
+                Int improves magic damage. 
+            </div>
+        </div>
+        <div class="bottom-wrapper">
+            <div id="char-class">
+                <img src="./portraits/Blank_Man.jpg" id="default">
+                <img src="./portraits/Rogue.jpg" id="rogue">
+                <img src="./portraits/Warrior.jpg"id="warrior">
+                <img src="./portraits/Mage.jpg" id="mage">
+            </div>
+            <div class="ability-select-wrapper">
+                <div id="ability-header">Abilities</div>
+                <div id="ability-select"></div>
+            </div>    
+            <div class="explain-ability"></div>
+            <div class="confirm-selection">
+                <button>Start Your Journey</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
